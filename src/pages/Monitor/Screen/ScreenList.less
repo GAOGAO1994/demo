@@ -1,0 +1,118 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.chartContent {
+  width: 700px;
+  height: 250px;
+  margin: 10px auto 30px;
+  overflow-y: scroll;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.quickTimePicker {
+  margin-left: 10px;
+
+  &:hover {
+    color: @primary-color;
+    cursor: pointer;
+  }
+}
+
+.quickTimePickerActive {
+  padding-bottom: 5px;
+  color: @primary-color;
+  border-bottom: 1px solid @primary-color;
+}
+
+.chartContainer {
+  position: relative;
+  float: left;
+  width: ~'calc(50% - 40px)';
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+  }
+
+  &:hover {
+    border-color: @primary-color;
+
+    .close {
+      z-index: 1;
+      display: block;
+
+      &:hover {
+        color: @primary-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.screenListCollapse {
+  :global {
+    .ant-collapse-item {
+      border: 0;
+
+      .ant-collapse-content > .ant-collapse-content-box {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.customPanelHeader {
+  .customPanelHeaderRight {
+    display: none;
+    float: right;
+  }
+
+  &:hover {
+    .customPanelHeaderRight {
+      display: block;
+    }
+  }
+}
+
+.customPanelItme {
+  margin-left: 40px;
+  padding: 5px;
+
+  .customPanelItmeRight {
+    display: none;
+    float: right;
+  }
+
+  &:hover {
+    background-color: #f2f2f2;
+
+    .customPanelItmeRight {
+      display: block;
+    }
+  }
+
+  &.active {
+    color: #fff;
+    background: #1890ff;
+  }
+}
+
+.screenLayout {
+  :global {
+    .ant-layout-header {
+      display: flex;
+      justify-content: space-between;
+      height: auto;
+      padding: 0 0 30px;
+      line-height: normal;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+}

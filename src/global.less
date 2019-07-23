@@ -1,0 +1,69 @@
+@import '~antd/lib/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 覆盖全局公共样式
+:global {
+  .ant-layout-content {
+    .antd-pro-components-page-header-wrapper-index-main {
+      .ant-page-header {
+        padding-left: 24px;
+        background: transparent;
+        border: 0;
+      }
+
+      .antd-pro-components-page-header-wrapper-index-children-content {
+        margin-top: 0;
+      }
+    }
+  }
+}

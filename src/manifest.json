@@ -1,0 +1,22 @@
+{
+  "name": "Monitor UI",
+  "short_name": "Monitor UI",
+  "display": "standalone",
+  "start_url": "./?utm_source=homescreen",
+  "theme_color": "#002140",
+  "background_color": "#001529",
+  "icons": [
+    {
+      "src": "icons/icon-300x300.png",
+      "sizes": "300x300"
+    },
+    {
+      "src": "icons/icon-300x300.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "icons/icon-300x300.png",
+      "sizes": "512x512"
+    }
+  ]
+}

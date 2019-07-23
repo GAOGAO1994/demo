@@ -1,0 +1,74 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+.quickTimePicker {
+  margin-left: 10px;
+
+  &:hover {
+    color: @primary-color;
+    cursor: pointer;
+  }
+}
+
+.quickTimePickerActive {
+  padding-bottom: 5px;
+  color: @primary-color;
+  border-bottom: 1px solid @primary-color;
+}
+
+.chartContent {
+  height: ~'calc(100vh - 115px)';
+  overflow-y: scroll;
+}
+
+.customContainer {
+  margin-bottom: 20px;
+  padding: 24px;
+  background: @white;
+  border-radius: 2px;
+
+  .leftContainer,
+  .rightContainer {
+    display: inline-block;
+  }
+  .leftContainer {
+    margin-top: 25px;
+    font-weight: bold;
+    vertical-align: top;
+  }
+  .rightContainer {
+    width: ~'calc(100% - 60px)';
+  }
+
+  .endpointsContainer {
+    min-height: 129px;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    :global {
+      .ant-checkbox-group {
+        width: 100%;
+      }
+
+      .ant-checkbox-wrapper {
+        margin: 15px 0;
+      }
+    }
+  }
+}
+
+.customList {
+  .customListOperator {
+    margin-bottom: 16px;
+    button {
+      margin-right: 8px;
+    }
+  }
+}
+
+.rightDistance {
+  display: inline-block;
+  padding-right: 10px;
+}

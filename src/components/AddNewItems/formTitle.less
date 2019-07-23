@@ -1,0 +1,28 @@
+@import "~antd/lib/style/themes/default.less";
+
+@titleColor: #aaa;
+
+.titleContainer {
+  display: flex;
+  .title {
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: @white;
+    vertical-align: center;
+    background-color: @titleColor;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    vertical-align: center;
+    border-right: 15px solid transparent;
+    border-bottom: 21px solid @titleColor;
+  }
+}
+.underline {
+  height: 1px;
+  background: @titleColor;
+  transform: scaleY(0.5);
+}
